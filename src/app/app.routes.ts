@@ -6,14 +6,9 @@ export const APP_ROUTES: Routes = [
     pathMatch: 'full',
     redirectTo: 'notes',
   },
-  //{
-  //  path: 'products',
-  //  loadChildren: () =>
-  //    import('./products/products.routes').then((r) => r.PRODUCT_ROUTES),
-  //},
-  //{
-  //  path: 'cart',
-  //  loadComponent: () =>
-  //    import('./cart/cart/cart.component').then((c) => c.CartComponent),
-  //},
+  {
+    path: 'notes',
+    loadChildren: () =>
+      import('./notes/notes.routing').then((r) => r.NotesRouting),
+  },
 ];
