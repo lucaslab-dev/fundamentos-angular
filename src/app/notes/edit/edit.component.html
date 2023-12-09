@@ -1,4 +1,24 @@
-<form (submit)="edit(noteElement.value)">
-	<input type="text" #noteElement name="note" id="note" [value]="note" autofocus>
-	<button type="submit">Update</button>
-</form>
+<div class="w3-container w3-padding-16">
+  <div class="w3-card-4">
+    <div class="w3-container w3-black">
+      <h2><i class="fa fa-file"></i> Edit Note</h2>
+    </div>
+
+    <form class="w3-container w3-padding-16" (submit)="edit(noteElement.value)">
+      <label>Description:</label>
+      <input
+        class="w3-input"
+        type="text"
+        #noteElement
+        name="note"
+        id="note"
+				[value]="note"
+        autofocus
+      />
+
+      <button class="w3-button w3-black w3-margin-top" type="submit">
+        <i class="fa fa-edit"></i> Change
+      </button>
+    </form>
+  </div>
+</div>

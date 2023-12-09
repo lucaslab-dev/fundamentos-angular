@@ -1,4 +1,23 @@
-<form (submit)="add(note.value)">
-	<input type="text" #note name="note" id="note" autofocus>
-	<button type="submit">Add</button>
-</form>
+<div class="w3-container w3-padding-16">
+  <div class="w3-card-4">
+    <div class="w3-container w3-black">
+      <h2><i class="fa fa-file"></i> New Note</h2>
+    </div>
+
+    <form class="w3-container w3-padding-16" (submit)="add(note.value)">
+      <label>Description:</label>
+      <input
+        class="w3-input"
+        type="text"
+        #note
+        name="note"
+        id="note"
+        autofocus
+      />
+
+      <button class="w3-button w3-black w3-margin-top" type="submit">
+        <i class="fa fa-plus"></i> Add
+      </button>
+    </form>
+  </div>
+</div>
