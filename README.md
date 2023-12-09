@@ -5,7 +5,6 @@
 - Configurar estrutura do projeto
 - Criar componente de notas
 - Configurar rotas
-- Ajustar testes
 
 ## Módulo 2 - Criando notas
 
