@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { NotesService } from '../notes.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-add',
   standalone: true,
-  imports: [CommonModule],
+  imports: [FormsModule],
   templateUrl: './add.component.html',
 })
-export class AddComponent {}
+export class AddComponent {
+  private notesService = inject(NotesService);
+
+  add(element: HTMLInputElement) {
+    this.notesService.add(element.value);
+    element.value = '';
+  }
+}

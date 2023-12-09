@@ -10,3 +10,7 @@
 
 - Criar componete
 - Criar serviço
+	- Adicionar nota
+- Utilizando signals
+- Debugging para iniciantes
+

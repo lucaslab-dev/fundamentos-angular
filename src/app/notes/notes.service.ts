@@ -7,10 +7,11 @@ export class NotesService {
   private notes = signal<string[]>([]);
 
   list() {
-    return this.notes;
+    return this.notes();
   }
 
   add(text: string) {
     this.notes.update((items) => [...items, text]);
+    console.log(this.notes());
   }
 }
