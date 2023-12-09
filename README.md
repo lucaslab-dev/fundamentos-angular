@@ -6,3 +6,8 @@
 - Criar componente de notas
 - Configurar rotas
 - Ajustar testes
+
+## Módulo 2 - Criando notas
+
+- Criar componete
+- Criar serviço
