@@ -1,10 +1,14 @@
+import { Component, inject } from '@angular/core';
+import { NotesService } from '../notes.service';
 import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  templateUrl: './list.component.html',
   imports: [NgFor],
+  templateUrl: './list.component.html',
 })
-export class ListComponent {}
+export class ListComponent {
+  private notesService = inject(NotesService);
+  notes = () => this.notesService.notes();
+}

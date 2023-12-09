@@ -4,11 +4,7 @@ import { Injectable, signal } from '@angular/core';
   providedIn: 'root',
 })
 export class NotesService {
-  private notes = signal<string[]>([]);
-
-  list() {
-    return this.notes();
-  }
+  notes = signal<string[]>([]);
 
   add(text: string) {
     this.notes.update((items) => [...items, text]);
