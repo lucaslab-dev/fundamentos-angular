@@ -1,4 +1,4 @@
-<form (ngSubmit)="add(note)">
-	<input type="text" #note name="note" id="note">
+<form (submit)="add(note.value)">
+	<input type="text" #note name="note" id="note" autofocus>
 	<button type="submit">Add</button>
 </form>

@@ -1,5 +1,8 @@
 <div>
-	@for (note of notes(); track note;) {
-  	<p>{{ note }}</p>
-	}
+	<a routerLink="/notes/add">+ New note</a>
+</div>
+<div>
+  @for (note of notes(); track note) {
+  	<h1>{{ note }}</h1>
+  }
 </div>

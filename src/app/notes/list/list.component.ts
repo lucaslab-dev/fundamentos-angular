@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { NotesService } from '../notes.service';
-import { NgFor } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [NgFor],
+  imports: [RouterModule],
   templateUrl: './list.component.html',
 })
 export class ListComponent {
