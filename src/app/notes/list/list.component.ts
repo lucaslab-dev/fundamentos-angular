@@ -2,9 +2,9 @@ import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-notes-list',
+  selector: 'app-list',
   standalone: true,
-  templateUrl: './notes-list.component.html',
+  templateUrl: './list.component.html',
   imports: [NgFor],
 })
-export class NotesListComponent {}
+export class ListComponent {}
