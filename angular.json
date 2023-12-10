@@ -28,7 +28,7 @@
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css", "src/assets/w3.css"],
+            "styles": ["src/assets/w3.css", "src/assets/font-awesome.min.css"],
             "scripts": []
           },
           "configurations": {

@@ -1,3 +1,4 @@
+import 'zone.js';
 import { provideRouter } from '@angular/router';
 import { importProvidersFrom } from '@angular/core';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
