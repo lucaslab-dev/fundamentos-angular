@@ -2,6 +2,10 @@
 
 ## Dependências
 
+- [W3.css](https://www.w3schools.com/w3css/)
+
+### Local
+
 - Node *
   ```sh
   brew install node #macOS
@@ -12,7 +16,6 @@
   npm i -g @angular/cli
   ```
 
-### Adicionais
+### Online
 
-- [W3.css](https://www.w3schools.com/w3css/)
 - [Stackblitz](https://stackblitz.com)
