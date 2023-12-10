@@ -8,7 +8,7 @@ import { NotesService } from '../notes.service';
   templateUrl: './edit.component.html',
 })
 export class EditComponent {
-  nodeIndex = -1;
+  noteIndex = -1;
   note?: string;
 
   private notesService = inject(NotesService);
@@ -19,13 +19,18 @@ export class EditComponent {
     const index = this.route.snapshot.paramMap.get('index');
 
     if (index) {
-      this.nodeIndex = +index;
-      this.note = this.notesService.notes().at(this.nodeIndex);
+      this.noteIndex = +index;
+      this.note = this.notesService.getByIndex(this.noteIndex);
     }
   }
 
   edit(note: string) {
-    this.notesService.edit({ index: this.nodeIndex, note: note });
+    this.notesService.edit({ index: this.noteIndex, note: note });
+    this.router.navigate(['/notes']);
+  }
+
+  remove() {
+    this.notesService.remove(this.noteIndex);
     this.router.navigate(['/notes']);
   }
 }

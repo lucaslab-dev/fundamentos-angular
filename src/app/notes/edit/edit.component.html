@@ -1,7 +1,12 @@
 <div class="w3-container w3-padding-16">
   <div class="w3-card-4">
     <div class="w3-container w3-black">
-      <h2><i class="fa fa-file"></i> Edit Note</h2>
+      <h2 class="w3-monospace">
+        <i class="fa fa-file"></i> Edit Note
+        <span class="w3-right w3-xxlarge" title="Delete note" (click)="remove()">
+          <i class="fa fa-trash"></i>
+        </span>
+      </h2>
     </div>
 
     <form class="w3-container w3-padding-16" (submit)="edit(noteElement.value)">

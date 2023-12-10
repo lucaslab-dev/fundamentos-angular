@@ -9,6 +9,6 @@ export const APP_ROUTES: Routes = [
   {
     path: 'notes',
     loadChildren: () =>
-      import('./notes/notes.routing').then((r) => r.NotesRouting),
+      import('./notes/notes.routes').then((r) => r.NotesRoutes),
   },
 ];
