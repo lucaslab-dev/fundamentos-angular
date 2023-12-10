@@ -1,0 +1,26 @@
+<div class="w3-container w3-padding-16">
+  <div class="w3-card-4">
+    <div class="w3-container w3-black">
+      <h2 class="w3-monospace">
+        <i class="fa fa-file"></i>
+        New Note
+      </h2>
+    </div>
+
+    <form class="w3-container w3-padding-16" (submit)="add()">
+      <label>Description:</label>
+      <input
+        class="w3-input"
+        [(ngModel)]="note"
+        type="text"
+        name="note"
+        id="note"
+        autofocus
+      />
+
+      <button class="w3-button w3-black w3-margin-top" [disabled]="!note" type="submit">
+        <i class="fa fa-plus"></i> Add
+      </button>
+    </form>
+  </div>
+</div>

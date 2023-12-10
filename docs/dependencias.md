@@ -2,7 +2,11 @@
 
 ## Dependências
 
-- Node
+- [W3.css](https://www.w3schools.com/w3css/)
+
+### Local
+
+- Node *
   ```sh
   brew install node #macOS
   choco install node -y #Windows
@@ -11,3 +15,7 @@
   ```sh
   npm i -g @angular/cli
   ```
+
+### Online
+
+- [Stackblitz](https://stackblitz.com)
