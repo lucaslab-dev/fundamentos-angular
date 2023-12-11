@@ -28,7 +28,7 @@
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/assets/w3.css", "src/assets/font-awesome.min.css"],
+            "styles": ["src/assets/w3.css"],
             "scripts": []
           },
           "configurations": {
@@ -75,6 +75,9 @@
           "options": {
             "buildTarget": "fundamentos-angular:build"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
